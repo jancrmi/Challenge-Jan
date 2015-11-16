@@ -1,0 +1,103 @@
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+body {
+	background-color: yellow;
+	color:#000000;
+	width: 100%;
+}
+
+.container {
+	width: 99%;
+	height: 75px;
+	margin: 0 auto;
+	background-color: orange;
+}
+
+.container:after {
+	content: '';
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+nav {
+	height: 75px;
+	background-color: turquoise;
+}
+
+main {
+	height:200px;
+	background-color: brown;
+	width: 75%;
+	float: left;
+}
+
+aside {
+	background-color: pink;
+	height: 200px;
+	width: auto;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+}
+li {
+	text-decoration: none;
+}
+
+.promo-list {
+	display: block;
+	padding: 0px;
+}
+
+.promo-list li {
+	width: 25%;
+	background: tomato;
+	height: 200px;
+	display: inline-block;
+	border-sizing: border-box;
+	border: solid 1px #fff;
+	padding: 0px;
+}
+
+#promo1,
+#promo2, 
+#promo3 {
+	float: left;
+	padding: 0px;
+}
+
+#promo4 {
+	float: right;
+}
+
+footer {
+	height: 75px;
+	background-color: green;
+	clear: both;
+}
+
+@media (max-width: 768px) {
+	.promo-list li {
+		background-color: #B18BED;
+	}
+	#promo1, #promo2 {
+		width: 50%;
+		display: inline-block;
+	}
+	#promo3, #promo4 {
+		width: 50%;
+		display: inline-block;
+	}
+}
